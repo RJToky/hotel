@@ -34,9 +34,14 @@ setInterval(() => {
 }, 5000);
 
 const header = document.querySelector("header");
+const p = document.querySelector(".container > main p");
+const titre = document.querySelector(".container > main > div");
 window.addEventListener("scroll", () => {
+  // if(window.innerWidth)
   header.classList.toggle(
     "scrolled",
-    window.scrollY > window.innerHeight - 440
+    window.scrollY > window.innerHeight - 300
   );
+  titre.classList.toggle("scrolled", window.scrollY > window.innerHeight - 450);
+  p.classList.toggle("scrolled", window.scrollY > window.innerHeight - 600);
 });

@@ -149,6 +149,13 @@ header nav ul li:hover::after {
 
 .container > main > div:nth-child(1) {
   overflow: hidden;
+  transition: 0.5s;
+  transform-origin: top;
+  transform: scaleY(1);
+}
+
+.container > main > div:nth-child(1).scrolled {
+  transform: scaleY(0);
 }
 
 .container > main > div:nth-child(1) h1 {
@@ -187,6 +194,13 @@ header nav ul li:hover::after {
   width: 70%;
   line-height: 1.2;
   color: #d5d5d5;
+  transition: 0.5s;
+  transform-origin: top;
+  transform: scaleY(1);
+}
+
+.container > main p.scrolled {
+  transform: scaleY(0);
 }
 
 body > main {
@@ -209,11 +223,11 @@ body > main {
   }
 
   .container {
-    position: relative;
+    /* position: relative; */
   }
 
   .clone-container {
-    position: fixed;
+    /* position: fixed; */
   }
 
   header nav {
