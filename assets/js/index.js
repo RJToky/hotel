@@ -40,7 +40,7 @@ window.addEventListener("scroll", () => {
   // if(window.innerWidth)
   header.classList.toggle(
     "scrolled",
-    window.scrollY > window.innerHeight - 300
+    window.scrollY > window.innerHeight - 250
   );
   titre.classList.toggle("scrolled", window.scrollY > window.innerHeight - 450);
   p.classList.toggle("scrolled", window.scrollY > window.innerHeight - 600);
